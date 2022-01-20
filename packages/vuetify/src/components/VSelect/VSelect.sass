@@ -18,6 +18,7 @@
 
 .v-select
   position: relative // For **attach** prop
+  max-width: max-content
 
   &:not(.v-select--is-multi).v-text-field--single-line
     .v-select__selections
@@ -127,9 +128,11 @@
     line-height: $select-selections-line-height
     max-width: 100%
     min-width: 0
+    > input
+      display: none
 
   &__selection
-    max-width: 90%
+    max-width: none
 
     &--comma
       margin: $select-selections-margin
