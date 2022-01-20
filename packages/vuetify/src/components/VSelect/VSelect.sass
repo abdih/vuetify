@@ -127,9 +127,12 @@
     line-height: $select-selections-line-height
     max-width: 100%
     min-width: 0
-
+    > input:not:first-child
+      width: 0 !important
+      max-width: 0 !important
+      min-width: 0 !important
   &__selection
-    max-width: 90%
+    max-width: none
 
     &--comma
       margin: $select-selections-margin
